@@ -33,6 +33,7 @@ MonoBehaviour:
     bold: 0
     italic: 0
     underline: 0
+  baseID: 1
   actors:
   - id: 1
     fields:
@@ -115,7 +116,7 @@ MonoBehaviour:
   - id: 1
     fields:
     - title: Title
-      value: Test Conversation
+      value: CanavarConversation
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -258,7 +259,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Hello.
+        value: Hey, can you tell those stupid Yaratiks that we're here to stay?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -277,6 +278,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
+      - title: Response Menu Sequence
+        value: 
+        type: 0
+        typeString: 
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -291,6 +296,12 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
+      - originConversationID: 1
+        originDialogueID: 1
+        destinationConversationID: 1
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -298,8 +309,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 70
+        x: 84.39963
+        y: 95.540985
         width: 160
         height: 30
     - id: 2
@@ -325,11 +336,11 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: 
+        value: Yes, I will!
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Goodbye.
+        value: Thanks, I appreciate it.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -348,6 +359,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
+      - title: Response Menu Sequence
+        value: 
+        type: 0
+        typeString: 
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -363,16 +378,82 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 120
+        x: 45.835144
+        y: 264.94272
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    - id: 3
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: Sorry, I can't.
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Hey, why can't you help us out?
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 320.25827
+        y: 223.16397
+        width: 160
+        height: 30
+    entryGroups: []
+    canvasScrollPosition: {x: 0, y: 215.17834}
+    canvasZoom: 0.60284096
   - id: 2
     fields:
     - title: Title
-      value: Test Barks
+      value: CanavarBark
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -527,7 +608,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Anyone out there?
+        value: Why won't the Yaratiks let us stay?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -561,8 +642,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 200
-        y: 30
+        x: 215
+        y: 23
         width: 160
         height: 30
     - id: 2
@@ -592,7 +673,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: I'm so hungry...
+        value: The Yaratiks are so boring...
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -626,8 +707,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 200
-        y: 80
+        x: 227
+        y: 78
         width: 160
         height: 30
     - id: 3
@@ -657,7 +738,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '[em1]Yawwwn.[/em1]'
+        value: Yosun's so cool!
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -691,10 +772,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 204
-        y: 131
+        x: 235
+        y: 141
         width: 160
         height: 30
+    entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 1
   syncInfo:
