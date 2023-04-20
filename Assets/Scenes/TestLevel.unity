@@ -1157,7 +1157,7 @@ PrefabInstance:
     - target: {fileID: 3594191103014986384, guid: ea40c9261eaf03644a723872fdbf2d9f,
         type: 3}
       propertyPath: conversation
-      value: YaratikConversation
+      value: CanavarConversation Copy
       objectReference: {fileID: 0}
     - target: {fileID: 3594191103014986385, guid: ea40c9261eaf03644a723872fdbf2d9f,
         type: 3}
